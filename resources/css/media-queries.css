@@ -1,0 +1,108 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+    width:100%;
+    }
+    
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    /*index page*/
+    .main-heading {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+    
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+    width:100%;
+    }
+    
+    .basket-content {
+    width: 40%; 
+    height:120%;
+    }
+    
+    .btn-one {
+        margin-bottom: 5px;
+    }
+}
+
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    /*index page*/
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
+    
+    big-icons {
+        width:10%;
+    }
+    
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+    width:100%;
+    }
+    
+    #small-nav-button {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .main-nav {
+        display: none;
+    }
+    
+    #small-nav-button {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .main-nav {
+        display: none;
+    }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    /*index page*/
+    section { padding: 25px 0; }
+    .contact-form {
+        width: 80%;
+        margin-left:10%;
+    }
+    
+    .big-icons {
+        width:20%;
+        margin-top: 10%;
+    }
+    
+    .contact-info {
+        width:70%;
+        margin-left:10%
+    }
+    
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+    width:200%;
+    }
+}
+

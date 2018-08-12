@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/other.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/media-queries.css">
+    <title>Products</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/img/logo-white.png" class="logo" alt="white logo">
+                <h1 class="title">Omnitravel</h1>
+                <ul class="main-nav" id="myMainnav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#" id="basket-btn" onclick="showBasket()" >Basket</a></li>
+                </ul>
+            </div>
+            
+            <a id="small-nav-button" onclick="openSmallNav()"><img src="resources/img/dropdown.png" alt="drop down button"></a>
+                
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="help.html">Help</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div id="myBasket" class="basket">
+            <div class="basket-content">
+                <span class="close">&times;</span>
+                <h2>BASKET</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="product-box">
+                            <div>
+                                <h3>Total</h3>
+                                <img id="productCarBasket" src="resources/img/edit-items-buffer.png" class="car-image" alt="Car Image">
+                                <img id="productWheelBasket" src="resources/img/edit-items-buffer.png" class="car-image" alt="WheelImage">
+                            </div>
+                            <div class="product-info">
+                                <ul>
+                                    <li></li>
+                                    <li id="productNameBasket">&nbsp;</li>
+                                    <li id="productWheelNameBasket">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="productTransBasket">&nbsp;</li>
+                                    <li id="productEngBasket">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="productPriceBasket">&nbsp;</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="products.html" class="btn-one">Change Car</a>
+                                <a href="checkout.html" class="btn-one">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="intro-products">
+        <video loop muted autoplay poster="resources/videos/" class="fullscreen-video">
+            <source src="resources/videos/video_background.mp4" type="video/mp4">
+        </video>
+        <h3>&nbsp;</h3>
+    </section>
+    
+    <section class="section-products">
+        <div class="row">
+            <h2>BROWSE THE RANGE</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <div>
+                        <h3 class="car_name">Aston Martin Vantage</h3>
+                        <img src="resources/img/product_cars/Aston_Martin_Vantage/aston-martin-vantage.jpg" class="car-image"  data-array="astonMartinVantArray" alt="Aston Martin Vantage">
+                        From<p class="product-price">£62,995</p>
+                        <p class="product-financing">Financing Available</p>
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li>&#10003;Comes in a variety of colours</li>
+                            <li>&#10003;Free MOT/Service for 1 year</li>
+                            <li>&#10003;Access Omnitravel exclusive</li>
+                            <li>&#10003;Free Delivery</li>
+                        </ul>
+                    </div>
+                    <div id="button-section">
+                         <a href="edit_items.html" class="btn-one" onclick="customiseButton('button-section')">Customise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <div>
+                        <h3 class="car_name">Chevrolet Corvette</h3>
+                        <img src="resources/img/product_cars/Chevrolet_Corvette/chevrolet_corvette.jpg" class="car-image" data-array="chevCorvArray" alt="Chevrolet Corvette">
+                        From<p class="product-price">£61,495</p>
+                        <p class="plan-financing">Financing Available</p>
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li>&#10003;Comes in a variety of colours</li>
+                            <li>&#10003;Free MOT/Service for 1 year</li>
+                            <li>&#10003;Access Omnitravel exclusive</li>
+                            <li>&#10003;Free Delivery</li>
+                        </ul>
+                    </div>
+                    <div id="button-section-2">
+                        <a href="edit_items.html" class="btn-one" onclick="customiseButton('button-section-2')">Customise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <div>
+                        <h3 class="car_name">Jaguar F-Type</h3>
+                        <img src="resources/img/product_cars/Jaguar_F-Type/jaguar_f-type.jpg" class="car-image" data-array="jagArray" alt="Jaguar F-Type">
+                        From<p class="product-price">£58,500</p>
+                        <p class="product-financing">Financing Available</p>
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li>&#10003;Comes in a variety of colours</li>
+                            <li>&#10003;Free MOT/Service for 1 year</li>
+                            <li>&#10003;Access Omnitravel exclusive</li>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div id="button-section-3">
+                        <a href="edit_items.html" class="btn-one" onclick="customiseButton('button-section-3')">Customise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+         <div class="row">
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <div>
+                        <h3 class="car_name">Lotus Evora 400</h3>
+                        <img src="resources/img/product_cars/Lotus_Evora/lotus_evora_400.jpg" class="car-image" data-array="lotusEvoraArray" alt="Lotus Evora 400">
+                        From<p class="product-price">£72,000</p>
+                        <p class="product-financing">Financing Available</p>
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li>&#10003;Comes in a variety of colours</li>
+                            <li>&#10003;Free MOT/Service for 1 year</li>
+                            <li>&#10003;Access Omnitravel exclusive</li>
+                            <li>&#10003;Free Delivery</li>
+                        </ul>
+                    </div>
+                    <div id="button-section-4">
+                        <a href="edit_items.html" class="btn-one" onclick="customiseButton('button-section-4')">Customise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <div>
+                        <h3 class="car_name">Mazda MX-5 Miata</h3>
+                        <img src="resources/img/product_cars/Mazda/mazda-mx-5-miata.jpg" class="car-image" data-array="mazdaArray" alt="Mazda MX-5 Miata">
+                        From<p class="product-price">£15,883</p>
+                        <p class="plan-financing">Financing Available</p>
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li>&#10003;Comes in a variety of colours</li>
+                            <li>&#10003;Free MOT/Service for 1 year</li>
+                            <li>&#10003;Access Omnitravel exclusive</li>
+                            <li>&#10003;Free Delivery</li>
+                        </ul>
+                    </div>
+                    <div id="button-section-5">
+                        <a href="edit_items.html" class="btn-one" onclick="customiseButton('button-section-5')">Customise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <div>
+                        <h3 class="car_name">Mercedes AMG-SLC43 Class</h3>
+                        <img src="resources/img/product_cars/AMG/mercedes-AMG-SLC43.jpg" class="car-image" data-array="mercedesArray" alt="Mercedes AMG-SLC43">
+                        From<p class="product-price">£46,950</p>
+                        <p class="product-financing">Financing Unavailable</p>
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li>&#10003;Comes in a variety of colours</li>
+                            <li>&#10003;Free MOT/Service for 1 year</li>
+                            <li>&#10003;Free Delivery</li>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div id="button-section-6">
+                        <a href="edit_items.html" class="btn-one" onclick="customiseButton('button-section-6')">Customise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <div>
+                        <h3 class="car_name">Chevrolet Camaro</h3>
+                        <img src="resources/img/product_cars/Camaro/chevrolet-camaro.jpg" class="car-image" data-array="chevCamaroArray" alt="Chevrolet Camaro">
+                        From<p class="product-price">£30,645</p>
+                        <p class="product-financing">Financing Unavailable</p>
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li>&#10003;Comes in a variety of colours</li>
+                            <li>&#10003;Free MOT/Service for 1 year</li>
+                            <li>&#10003;Access Omnitravel exclusive</li>
+                            <li>&#10003;Free Delivery</li>
+                        </ul>
+                    </div>
+                    <div id="button-selection-7">
+                         <a href="edit_items.html" class="btn-one" onclick="customiseButton('button-selection-7')">Customise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <div>
+                        <h3 class="car_name">Aston Martin Vanquish</h3>
+                        <img src="resources/img/product_cars/Aston_Martin_Vanquish/aston-martin-vanquish.jpg" class="car-image" data-array="astonMartinVanqArray" alt="Aston Martin Vanquish">
+                        From<p class="product-price">£192,995</p>
+                        <p class="plan-financing">Financing Available</p>
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li>&#10003;Comes in a variety of colours</li>
+                            <li>&#10003;Free MOT/Service for 1 year</li>
+                            <li>&#10003;Access Omnitravel exclusive</li>
+                            <li>&#10003;Free Delivery</li>
+                        </ul>
+                    </div>
+                    <div id="button-selection-8">
+                        <a href="edit_items.html" class="btn-one" onclick="customiseButton('button-selection-8')">Customise</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <div>
+                        <h3 class="car_name">Ford Mustang</h3>
+                        <img src="resources/img/product_cars/Ford_Mustang/ford-mustang.jpg" class="car-image" data-array="fordArray" alt="Ford Mustang">
+                        From<p class="product-price">£31,310</p>
+                        <p class="product-financing">Financing Unavailable</p>
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li>&#10003;Comes in a variety of colours</li>
+                            <li>&#10003;Free MOT/Service for 1 year</li>
+                            <li>&#10003;Free Delivery</li>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div id="button-section-9">
+                        <a href="edit_items.html" class="btn-one" onclick="customiseButton('button-section-9')">Customise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">Who We Are</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><img src="resources/img/social-icons/facebook.png" class="small-icon" alt="Facebook Icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/twitter.png" class="small-icon" alt="Twitter Icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/instagram.png" class="small-icon" alt="Instagram Icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/google-plus.png" class="small-icon" alt="Google Plus Icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                Copyright &copy; 2016 by Omnitravel. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="resources/js/onload-products.js"></script>
+<script src="resources/js/functions.js"></script>
+</body>
+
+</html>

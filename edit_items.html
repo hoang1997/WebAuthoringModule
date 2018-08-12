@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="resources/css/other.css">
+<link rel="stylesheet" type="text/css" href="resources/css/grid.css">
+<link rel="stylesheet" type="text/css" href="resources/css/media-queries.css">
+<title>Promotions</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/img/logo-white.png" class="logo" alt="white logo">
+                <h1>Omnitravel</h1>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#" id="basket-btn" onclick="showBasket()">Basket</a></li>
+                </ul>
+            </div>
+            
+            <a id="small-nav-button" onclick="openSmallNav()"><img src="resources/img/dropdown.png" alt="drop down button"></a>
+                
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="help.html">Help</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+        </nav>
+        <div id="myBasket" class="basket">
+            <div class="basket-content">
+                <span class="close">&times;</span>
+                <h2>BASKET</h2>
+                <div class="row">
+                   <div class="col">
+                        <div class="product-box">
+                            <div>
+                                <h3>Total</h3>
+                                <img id="carImageArea2" src="resources/img/edit-items-buffer.png" class="car-image" alt="car image">
+                                <img id="wheelImageArea2" src="resources/img/edit-items-buffer.png" class="car-image" alt="wheel image">
+                            </div>
+                            <div class="product-info">
+                                <ul>
+                                    <li></li>
+                                    <li id="nameBasketArea2">&nbsp;</li>
+                                    <li id="wheelNameBasketArea2">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="transBasketArea2">&nbsp;</li>
+                                    <li id="engBasketArea2">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="priceBasketArea2">&nbsp;</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="products.html" class="btn-one">Change Car</a>
+                                <a href="checkout.html" class="btn-one">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+   <div class="margin">
+        <div class="row">
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    
+    
+    <section class="section-edit-items">
+        <div class="row">
+            <h2>Customise</h2>
+        </div>
+        <div class="row">
+                <div class="col span-1-of-3">
+                    <div class="product-box">
+                        <div>
+                            <h3 id="carName">Product Name</h3>                
+                            <img id="carImage" src="resources/img/product_cars/Aston_Martin_Vantage/aston-martin-vantage.jpg" class="car-image" alt="initial car">
+                            <button class="left-button" onclick="lastCarImage()">&laquo;</button>
+                            <button class="right-button" onclick="nextCarImage()">&raquo;</button>
+                        </div>
+                        <div class="product-info editcar">
+                            <ul>
+                                <li>
+                                    <h3 id="priceOfCar">Price of Car</h3>
+                                </li>
+                                <li>Transmission:</li>
+                                <li>
+                                    <select name="transmission" id="transmission">
+                                        <option value="Automatic" id="auto">Automatic</option>
+                                        <option value="Manual" id="manual">Manual</option>
+                                    </select>
+                                </li>
+                                <li>Engine Size:</li>
+                                <li>
+                                    <select name="engine" id="engine">
+                                        <option value="6 Litre">6 litre</option>
+                                        <option value="7 Litre">7 litre</option>
+                                        <option value="8 Litre">8 litre</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-one" onclick="savedItems()">Choose</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col span-1-of-3">
+                    <div class="product-box">
+                        <div class="edit_wheel">
+                            <h3>Wheel</h3>
+                            <img id="wheel-img" src="resources/img/wheels_images/SC-8_silver_machine.jpg" class="car-image" alt="initial wheel">
+                            <button class="left-button" onclick="lastWheelImage()">&laquo;</button>
+                            <button class="right-button" onclick="nextWheelImage()">&raquo;</button>
+                        </div>
+                        <div class="product-info">
+                            <ul>
+                                <li id="wheelName">SC-8 Silver Machine Wheel</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="#" class="btn-one" onclick="savedItems()">Choose</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="product-box">
+                        <div>
+                            <h3>Total</h3>
+                            <img id="carImageArea" src="resources/img/edit-items-buffer.png" class="car-image" alt="car image">
+                            <img id="wheelImageArea" src="resources/img/edit-items-buffer.png" class="car-image" alt="wheel image">
+                        </div>
+                        <div class="product-info">
+                            <ul>
+                                <li></li>
+                                <li id="nameBasketArea">&nbsp;</li>
+                                <li id="wheelNameBasketArea">&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li id="transBasketArea">&nbsp;</li>
+                                <li id="engBasketArea">&nbsp;</li>
+                                <li>&nbsp;</li>
+                                <li id="priceBasketArea">&nbsp;</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a href="checkout.html" class="btn-one" onclick="buyNowButton()">Buy Now</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+    </section>
+    <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><img src="resources/img/social-icons/facebook.png" class="small-icon" alt="facebook icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/twitter.png" class="small-icon" alt="twitter icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/instagram.png" class="small-icon" alt="instagram icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/google-plus.png" class="small-icon" alt="google plus icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2016 by Pitstone. All rights reserved.
+                </p>
+            </div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="resources/js/onload-customise.js"></script>
+<script src="resources/js/functions.js"></script>
+</body>
+
+</html>

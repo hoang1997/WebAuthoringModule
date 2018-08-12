@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="resources/css/other.css">
+<link rel="stylesheet" type="text/css" href="resources/css/grid.css">
+<link rel="stylesheet" type="text/css" href="resources/css/media-queries.css">
+<title>Products</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/img/logo-white.png" class="logo" alt="white logo">
+                <h1>Omnitravel</h1>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#" id="basket-btn" onclick="showBasket()">Basket</a></li>
+                </ul>
+            </div>
+            
+            <a id="small-nav-button" onclick="openSmallNav()"><img src="resources/img/dropdown.png" alt="drop down button"></a>
+                
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="help.html">Help</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <div id="myBasket" class="basket">
+            <div class="basket-content">
+                <span class="close">&times;</span>
+                <h2>BASKET</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="product-box">
+                            <div>
+                                <h3>Total</h3>
+                                <img id="contactCarBasket" src="resources/img/edit-items-buffer.png" class="car-image" alt="Car image">
+                                <img id="contactWheelBasket" src="resources/img/edit-items-buffer.png" class="car-image" alt="Wheel Image">
+                            </div>
+                            <div class="product-info">
+                                <ul>
+                                    <li></li>
+                                    <li id="contactNameBasket">&nbsp;</li>
+                                    <li id="contactWheelNameBasket">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="contactTransBasket">&nbsp;</li>
+                                    <li id="contactEngBasket">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="contactPriceBasket">&nbsp;</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="products.html" class="btn-one">Change Car</a>
+                                <a href="checkout.html" class="btn-one">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="intro-contact-us">
+        <div class="row">
+            <h4>&nbsp;</h4>
+        </div>
+    </section>
+    
+    <section class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name:*</label>
+                    </div>
+                    <div class="col span 2-of-3">
+                        <input type='text' name='name' id='name' placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email:*</label>
+                    </div>
+                    <div class="col span 2-of-3">
+                        <input type='email' name='email' id='email' placeholder='Your Email' required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="findus">How did you find us:*</label>
+                    </div>
+                    <div class="col span 2-of-3">
+                        <select name='findus' id='findus'>
+                            <option value="friends">Friends</option>
+                            <option value="search">Search engine</option>
+                            <option value="advert">Advert</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Newsletter:*</label>
+                    </div>
+                    <div class="col span 2-of-3">
+                        <input type="checkbox" name="news" id="news" checked required>yes, please
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="message">Drop Us A Line:*</label>
+                    </div>
+                    <div class="col span 2-of-3">
+                        <textarea name='message' placeholder='Your Message' id='message'></textarea>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span 2-of-3">
+                        <input type="submit" value="Submit" class="btn-one contact-btn">
+                    </div>
+                </div>
+            </form>
+            <div class="contact-info">
+                <h3>Email:</h3>
+                <p>info@pitstone.com</p>
+                <h3>Telephone:</h3>
+                <p> 0344 879 5101</p>
+                <h3>Line Opening Hours</h3>
+                <p>&nbsp;<br>Monday: 9am-5:30pm<br>Tuesday: 9am-5:30pm<br>Wednesday: 9am-5:30pm<br>Thursday: 9am-5:30pm<br>Friday: 9am-5:30pm<br>Saturday: Closed<br>Sunday: Closed</p>
+                <h3>Headquarters Address</h3>
+                <p>9 Shakespeare St, Lincoln LN5 8JX</p>
+                <h3>email</h3>
+                <p>info@pitstone.com</p>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="row">
+            <h2>Where We Are</h2>
+        </div>
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2388.997678386127!2d-0.5468930843821382!3d53.21788997995229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48785b2ca4b144c9%3A0x3a2ece810cf0cbc4!2sShakespeare+Street+Garage!5e0!3m2!1sen!2suk!4v1483537986536" width="1270" height="450"  style="border:0" allowfullscreen></iframe>
+            
+        </div>
+    </section>
+    
+    <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><img src="resources/img/social-icons/facebook.png" class="small-icon" alt="Facebook Icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/twitter.png" class="small-icon" alt="Twitter Icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/instagram.png" class="small-icon" alt="Instagram Icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/google-plus.png" class="small-icon" alt="google plus icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2016 by Pitstone. All rights reserved.
+                </p>
+            </div>
+    </footer>
+<script src="resources/js/onload-contact.js"></script>
+<script src="resources/js/functions.js"></script>
+</body>
+</html>

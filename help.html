@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="resources/css/other.css">
+<link rel="stylesheet" type="text/css" href="resources/css/grid.css">
+<link rel="stylesheet" type="text/css" href="resources/css/media-queries.css">
+<title>Help</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/img/logo-white.png" class="logo" alt="white logo">
+                <h1>Omnitravel</h1>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#" id="basket-btn" onclick="showBasket()">Basket</a></li>
+                </ul>
+            </div>
+            
+           <a id="small-nav-button" onclick="openSmallNav()"><img src="resources/img/dropdown.png" alt="drop down button"></a>
+                
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="help.html">Help</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+        </nav>
+        <div id="myBasket" class="basket">
+            <div class="basket-content">
+                <span class="close">&times;</span>
+                <h2>BASKET</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="product-box">
+                            <div>
+                                <h3>Total</h3>
+                                <img id="helpCarBasket" src="resources/img/edit-items-buffer.png" class="car-image" alt="Car Image">
+                                <img id="helpWheelBasket" src="resources/img/edit-items-buffer.png" class="car-image" alt="Wheel Image">
+                            </div>
+                            <div class="product-info">
+                                <ul>
+                                    <li id="helpNameBasket"></li>
+                                    <li id="helpWheelNameBasket">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="helpTransBasket">&nbsp;</li>
+                                    <li id="helpEngBasket">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="helpPriceBasket">&nbsp;</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="products.html" class="btn-one">Change Car</a>
+                                <a href="checkout.html" class="btn-one">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="intro-contact-us">
+        <div class="row">
+            <h1>&nbsp;</h1>
+        </div>
+    </section>
+    
+
+    
+    <section>
+        <div class="row">
+        <h2>Help</h2>
+        </div>
+        <div class="accordion-container">
+        <button class="tab" onclick="showAccordion()">Delivery</button>
+            <div class="panel">
+                <h2>Delivery</h2>
+                <p>Delivery is available if you live in the UK or ireland. Please email us or call to make the arrangements needed.</p>
+            </div>
+        <button class="tab" onclick="showAccordion()">Finance</button>
+            <div class="panel">
+                <h2>Hire Purchase</h2>
+                <p>After paying a deposit of normally around 10%, you make fixed monthly payment over an agreed period. The car isn’t yours until after the final payment, unlike with a personal loan.</p>
+                <h2>Car Leasing</h2>
+                <p>You lease the car either through personal contract hire, or personal contract purchase. You make monthly payments and when the contract ends the car either returns to the dealer (if you chose PCH) or you can make a balloon payment to get ownership of the car(if you choose PCP). Although in PCH their is a mileage restriction of normally 25,000 miles.</p>
+            </div>
+        <button class="tab" onclick="showAccordion()">Stock</button>
+            <div class="panel">
+                <h2>Stock</h2>
+                <p>Stock varies depending on the premium car we stock. If there is no stock, we will email you when there is. </p>
+            </div>
+        <button class="tab" onclick="showAccordion()">Collection</button>
+            <div class="panel">
+                <h2>Collection</h2>
+                <p>Collection is available at the lincoln dealership. Please email info@omnitravel.com  for more information</p>
+            </div>
+        <button class="tab" onclick="showAccordion()">Insurance</button>
+            <div class="panel">
+                <h2>Insurance</h2>
+                <p>Omnitravel now does insurance, please email info@omnitravel.com for more information</p>
+            </div>
+        <button class="tab" onclick="showAccordion()">Opening Times</button>
+            <div class="panel">
+                <h2>Opening Times</h2>
+                <p>Lincoln Store</p>
+                <p>&nbsp;</p>
+                <p>Monday: 9am-5:30pm</p>
+                <p>Tuesday: 9am-5:30pm</p>
+                <p>Wednesday: 9am-5:30pm</p>
+                <p>Thursday: 9am-5:30pm</p>
+                <p>Friday: 9am-5:30pm</p>
+                <p>Saturday: 9am-3:00pm</p>
+                <p>Sunday: closed</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><img src="resources/img/social-icons/facebook.png" class="small-icon" alt="facebook icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/twitter.png" class="small-icon" alt="twitter icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/instagram.png" class="small-icon" alt="instagram icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/google-plus.png" class="small-icon" alt="google plus icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2016 by Pitstone. All rights reserved.
+                </p>
+            </div>
+    </footer>
+<script src="resources/js/onload-help.js"></script>
+<script src="resources/js/functions.js"></script>
+</body>
+
+</html>

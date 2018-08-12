@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="resources/css/other.css">
+<link rel="stylesheet" type="text/css" href="resources/css/grid.css">
+<link rel="stylesheet" type="text/css" href="resources/css/media-queries.css">
+<title>Products</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="resources/img/logo-white.png" alt="white logo" class="logo">
+                <h1>Omnitravel</h1>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#" id="basket-btn" onclick="showBasket()">Basket</a></li>
+                </ul>
+            </div>
+            
+            <a id="small-nav-button" onclick="openSmallNav()"><img src="resources/img/dropdown.png" alt="drop down button"></a>
+                
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="help.html">Help</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+        </nav>
+        <div id="myBasket" class="basket">
+            <div class="basket-content">
+                <span class="close">&times;</span>
+                <h2>BASKET</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="product-box">
+                            <div>
+                                <h3>Total</h3>
+                                <img id="checkoutCarBasket2" src="resources/img/edit-items-buffer.png" class="car-image" alt="car image">
+                                <img id="checkoutWheelBasket2" src="resources/img/edit-items-buffer.png" class="car-image" alt="wheel image">
+                            </div>
+                            <div class="product-info">
+                                <ul>
+                                    <li id="checkoutNameBasket2"></li>
+                                    <li id="checkoutWheelNameBasket2">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="checkoutTransBasket2">&nbsp;</li>
+                                    <li id="checkoutEngBasket2">&nbsp;</li>
+                                    <li>&nbsp;</li>
+                                    <li id="checkoutPriceBasket2">&nbsp;</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <a href="products.html" class="btn-one">Change Car</a>
+                                <a href="checkout.html" class="btn-one">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="intro-contact-us">
+        <div class="row">
+            <h4>Your Order</h4>
+        </div>
+    </section>
+    
+    <section class="checkout-info">
+        <div class="row" id="itemSection">
+            <h2>Order Summary</h2>
+            <h3>&nbsp;</h3>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="product-box">
+                    <div>
+                        <h3>Total</h3>
+                        <img id="checkoutCarBasket" src="resources/img/edit-items-buffer.png" class="car-image" alt="checkout car image">
+                    </div>
+                    <div class="product-info">
+                        <ul>
+                            <li id="checkoutNameBasket">&nbsp;</li>
+                            <li id="checkoutWheelNameBasket">&nbsp;</li>
+                            <li>&nbsp;</li>
+                            <li id="checkoutTransBasket">&nbsp;</li>
+                            <li id="checkoutEngBasket">&nbsp;</li>
+                            <li>&nbsp;</li>
+                            <li id="checkoutPriceBasket">&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="index.html" class="btn-one" onclick="finishBtn()">Finish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><img src="resources/img/social-icons/facebook.png" class="small-icon" alt="facebook icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/twitter.png" class="small-icon" alt="twitter icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/instagram.png" class="small-icon" alt="instagram icon"></a></li>
+                        <li><a href="#"><img src="resources/img/social-icons/google-plus.png" class="small-icon" alt="google plus icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2016 by Omnitravel. All rights reserved.
+                </p>
+            </div>
+    </footer>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src = "resources/js/onload-checkout.js"></script>    
+</body>
+</html>

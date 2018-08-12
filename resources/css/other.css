@@ -1,0 +1,504 @@
+/* ------------------------- */
+/* BASIC SETUP */
+/* ------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #eae9e8;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+}
+/* ------------------------- */
+/* RESUABLES */
+/* ------------------------- */
+.btn-one {
+    text-decoration: none;
+    padding:5px;
+}
+.btn-one:link,
+.btn-one:visited {
+    border: 1px solid #fff;
+    border-radius: 200px;
+    color: #fff;
+    margin-right: 20px
+}
+
+.btn-one:hover,
+.btn-one:active {
+    background-color:#cecece ;
+}
+
+.contact-btn {
+    color:orange;
+    width:200%;
+    height:200%;
+}
+
+.margin {
+    margin-bottom: 5%;
+}
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+.logo {
+    height:35px;
+    width: auto;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+header {
+    background-color:#333;
+    background-size: cover;
+    background-position: center;
+    height: 60px;
+    width: 100%;
+    position:fixed;
+    z-index: 9999;
+}
+
+h1 {
+    width: 100px;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.83);
+    letter-spacing: 1px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #7cbcfc;
+    content:" ";
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.title {
+    padding:0;
+    margin-right: 0;
+}
+/*BASKET*/
+.basket {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.basket-content {
+    background-image: url(img/sayagata-400px.png);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    height:120%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.basket-list {
+    list-style: none;
+}
+/* ------------------------- */
+/* EDIT ITEMS */
+/* ------------------------- */
+.left-button,
+.right-button {
+    height:30px;
+    width:60px;
+    font-size: 20px;
+    border-radius: 50%:
+}
+
+.left-button {
+    margin-left:30%
+}
+
+.editcar ul li select {
+    width:100%;
+}
+
+.edit_wheel img {
+    width: 80%;
+    margin-left: 10%;
+}
+/* ------------------------- */
+/* NAVIGATION */
+/* ------------------------- */
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+    
+.main-nav li {
+    display:inline-block;
+    margin-left: 40px;
+    }
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: sans-serif;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #fff;
+}
+
+.icon{
+    display: none;
+    font-size: 10px;
+}
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 60px;
+    margin-left:80%;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 100%;
+    color: #adacac;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#small-nav-button {
+    display: none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* ------------------------- */
+/* WHO WE ARE */
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* PRODUCT Page*/
+/* ------------------------- */
+
+.intro-products p {
+    color:#fff;
+    z-index: 9999;
+}
+
+.section-products {
+    background-color: #f4f4f4;
+}
+
+.product-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width:90%;
+    margin-left:5%;
+}
+
+.product-box div {
+    padding:15px;
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: 0 2px 2px #f2f2f2
+}
+
+.product-box div:first-child {
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.product-box div:last-child {
+    background-color: #bebebe;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 200%;
+    margin-bottom: 10px;
+    font-weight:100;
+    color: #888;
+}
+
+.product-financing {
+    font-size:80%;
+}
+
+.product-box ul {
+    list-style:none;
+}
+
+.car-image
+{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#wheel-image {
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+#carImageArea,
+#carImageArea2,
+#wheelImageArea,
+#wheelImageArea2,
+#helpCarBasket,
+#helpWheelBasket,
+#productCarBasket,
+#productWheelBasket
+{
+    width:60%;
+    margin-left:20%;
+    padding:0;
+}
+
+.product-info,
+.editcar {
+    background-color: #ebebeb;
+}
+
+video
+{
+max-width: 100%;
+height: auto;
+max-height: 100%;
+}
+
+/* ------------------------- */
+/* HELP SECTION */
+/* ------------------------- */
+
+h4 {
+    text-align: center;
+    margin: 2%;
+    font-size: 140%;
+    
+}
+.panel p {
+    text-align: center;
+    width: 60%;
+    margin-left: 20%
+}
+button.tab {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 100%;
+    margin: 0 15%;
+}
+
+button.tab.active, 
+button.tab:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: #eae9e8;
+    display: none;
+}
+
+div.panel.show {
+    display: block;
+}
+
+/* ------------------------- */
+/* CONTACT US SECTION */
+/* ------------------------- */
+.section-form {
+     background-image: url(img/sayagata-400px.png);
+}
+.contact-form {
+    width:50%;
+    margin: 0 auto;
+    clear:both;
+    float:left;
+    margin-left:20%;
+    margin-right:3%;
+    margin-bottom:10%;
+    padding:2%;
+    background-color: rgba(188, 219, 245, 0.75);
+    border-radius: 10px;
+    font-size: 85%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width:250%;
+    padding:7px;
+    margin:3px;
+    border-radius:3px;
+    border: 1px solid #ccc;
+}
+input[type=checkbox]{
+    margin:10px;
+}
+textarea {
+    height:100px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.contact-info {
+    display:block;
+    float:left;
+    width:20%;
+    font-size:80%;
+    background-color: rgba(188, 219, 245, 0.75);;
+    padding:2%;
+    border-radius:5px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+iframe {
+    border: 0px;
+}
+
+/* ------------------------- */
+/* FOOTER */
+/* ------------------------- */
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 80%;
+    margin-top:30px;
+}
+
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style:none;
+    float:left;
+}
+
+.footer-nav li {
+    margin-right: 20px;
+}
+
+.footer-nav li,
+.social-links li{
+    display:inline-block;
+}
+
+.social-links li {
+    padding:0;
+    margin-top:-10px;
+}
+
+.footer-nav li:last-child,{
+    margin:0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active{
+    color: #ddd;
+    transition: color 0.2s;
+}
+
+.small-icon {
+    width: 30%;
+}
+
